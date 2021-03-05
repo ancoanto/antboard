@@ -21,7 +21,8 @@
                     <li><img src="images/vector.svg"> Associate the page with the payment system</li>
                 </ul>
             </div>
-            <img src="images/white.svg" alt="white quadrat">
+            <video src="video/Kaffee.mp4" controls width="360" height="360"></video>
+            <!-- <img src="images/white.svg" alt="white quadrat"> -->
         </header>
         <article class="section">
             <div class="about">
@@ -336,10 +337,34 @@
                 <div class="footer_top">
                     <form action="#">
                         <div class="form">
-                            <input class="input" type="text" placeholder="Your name:">
-                            <input class="input" type="email" placeholder="Your email:">
-                            <textarea class="input" placeholder="Your message:" name="" id="" cols="30"
-                                rows="7"></textarea>
+                            <fieldset class="contacts">
+                                <legend>Ваше сообщение</legend>
+                                <input required class="input" type="text" placeholder="Your name:">
+                                <input required class="input" type="email" placeholder="Your email:">
+                                <textarea required class="input" placeholder="Your message:" name="" id="" cols="30"
+                                    rows="7"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Дополнительные данные</legend>
+                                <span class="input_footer"> Ваш пол </span>
+                                <label><input class="input_footer" type="radio" name="pol"> М</label>
+                                <label><input class="input_footer" type="radio" name="pol"> Ж</label><br>
+                                <span class="input_footer">Дата рождения</span>
+                                <input type="date" name="" id=""><br>
+                                <span class="input_footer">Откуда вы о нас узнали?</span>
+                                <select name="" id="">
+                                    <option value="">Выберите вариант...</option>
+                                    <option value="От друзей">От друзей</option>
+                                    <option value="Из интернета">Из интернета</option>
+                                    <option value="Реклама по ТВ">Реклама по ТВ</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                            </fieldset><br>
+                            <label><input required class="input_footer" type="checkbox" name="Konfidencial"> Согласен с
+                                условиями
+                                конфиденциальности</label>
+                            <button class="reset" type="reset" name="reset" formtarget="_self">Очистить все
+                                поля</button>
                             <button class="submit" type="submit">SEND</button>
                         </div>
                     </form>
